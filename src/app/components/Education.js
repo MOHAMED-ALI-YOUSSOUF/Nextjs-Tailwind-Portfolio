@@ -38,7 +38,7 @@ const Education = () => {
         Education
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-full mx-auto relative">
         {/* Vertical Bar */}
         <motion.div
           className="absolute left-9 top-15 w-[4px] h-full bg-dark origin-top dark:bg-light"
@@ -49,14 +49,14 @@ const Education = () => {
 
         <div className="mt-16 pl-16">
           {educationList.map((edu, index) => (
-            <motion.div key={index} className="border border-dark rounded-lg p-4 mb-16 dark:border-light text-dark">
+            <motion.div key={index} className="border border-dark rounded-lg p-4 mb-16 dark:border-light text-dark dark:text-light">
               <LiIcon reference={ref} />
               <h3 className="font-bold text-xl">{edu.degree}</h3>
               <p className="italic">
                 {edu.institution}  
               </p>
               <p>{edu.duration}</p>
-              <p>{edu.description}</p>
+              <p>- {edu.description}</p>
             </motion.div>
           ))}
         </div>

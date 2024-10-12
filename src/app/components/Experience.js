@@ -35,12 +35,12 @@ const Experience = () => {
   });
 
   return (
-    <section className="mt-64 mb-64">
+    <section className="mt-64 mb-64 ">
     <h2 className="font-bold text-8xl text-center mb-32 text-dark dark:text-light 
       lg:text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
         Experience
       </h2>
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-full mx-auto relative">
         {/* Barre verticale */}
         <motion.div
           className="absolute left-9 top-15 w-[4px] h-full bg-dark origin-top dark:bg-light"
@@ -53,7 +53,7 @@ const Experience = () => {
            
           {experiences.map((exp, index) => (
             <motion.div key={index} 
-            className="border border-dark rounded-lg p-4 mb-16 dark:border-light text-dark"
+            className="border border-dark rounded-lg p-4 mb-16 dark:border-light text-dark dark:text-light"
             
             >
                 <div
@@ -64,7 +64,7 @@ const Experience = () => {
                 {exp.role} - {exp.duration}
               </p>
               
-              <p>-{exp.description}</p>
+              <p>- {exp.description}</p>
             </motion.div>
           ))}
         </div>

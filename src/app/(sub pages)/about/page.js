@@ -7,7 +7,7 @@ import Skills from "@/app/components/Skills";
 import Experience from "@/app/components/Experience";
 import Education from "@/app/components/Education";
 export const metadata = {
-  title: "MAY | about",
+  title: "MAY | About",
   description: "Frontend Developer",
 };
 
@@ -33,8 +33,7 @@ const About = () => {
               My name is Mohamed Ali Youssouf, and I am a frontend developer
               specializing in creating modern, intuitive, and user-centered digital
               experiences. With a strong background and a master’s degree in computer
-              engineering, I have worked on several projects, including
-              salehismael.com, djibstudy.com, and afarhalkdernegi.org. Each project
+              engineering, I have worked on several projects. Each project
               has allowed me to develop both technical and creative skills, while
               meeting the specific needs of my clients and users.
             </p>
