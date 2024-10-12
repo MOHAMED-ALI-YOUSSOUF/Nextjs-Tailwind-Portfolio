@@ -38,7 +38,7 @@ export default function Home() {
            
             <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
   As a skilled frontend developer, I am passionate about creating modern, intuitive web experiences. 
-  Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+  Explore my latest projects , showcasing my expertise in React.js & Nextjs and web development.
 </p>
 
             <div className="flex items-center self-start mt-2 lg:self-center">
