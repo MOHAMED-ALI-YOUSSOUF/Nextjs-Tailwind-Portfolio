@@ -204,7 +204,7 @@ const ProjectCard = () => {
     {projects.map((project, index) => (
       <motion.div 
       key={index}
-      className="borde bg-[#1b1b1b] border-white/20 flex flex-col md-flex-row text-white rounded-3xl sticky top-28 justify-between items-start mb-16 sm:w-[300p] h-[600px] 
+      className="borde bg-light dark:bg-dark border-white/20 flex flex-col md-flex-row text-white rounded-3xl sticky top-28 justify-between items-start mb-16 sm:w-[300p] h-[600px] 
      w-[1100p] "
       initial={{opacity:0, y:50}}
       whileInView={{opacity:1, y:0}}
