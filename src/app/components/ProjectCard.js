@@ -7,6 +7,16 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    title: "Personal Budget Tracker",
+    description:
+      "A web application designed to help users track their income, expenses, and overall financial health, featuring charts, reports, and spending insights.",
+    link: "https://personal-budget-tracker-bay.vercel.app/",
+    image: "/images/projects/personal-budget-tracker.png", // Update to correct image path
+    width: 600,
+    height: 400,
+  },
+  {
+    id: 2,
     title: "Saleh Ismael Portfolio",
     description:
       "A personal portfolio website showcasing the work of Saleh Ismael, featuring interactive elements and a modern design.",
@@ -16,27 +26,27 @@ const projects = [
     height: 400,
   },
   {
-    id: 2,
+    id: 3,
     title: "Djibstudy",
     description:
-      "An educational platform for Djibouti student, providing resources for students.",
+      "An educational platform for Djibouti students, providing resources for students.",
     link: "https://djibstudy.com",
     image: "/images/projects/2.png",
     width: 600,
     height: 400,
   },
   {
-    id: 3,
+    id: 4,
     title: "IT Mastery",
     description:
-      "Educational platform create using React.js & Bootstrap with a team",
+      "Educational platform created using React.js & Bootstrap with a team.",
     link: "https://itmasteryschool.com",
     image: "/images/projects/4.png", // Change to the correct image path
     width: 600,
     height: 400,
   },
   {
-    id: 4,
+    id: 5,
     title: "Afar Halk Derneği",
     description:
       "A website for the Afar Cultural Association, aimed at promoting Afar culture and connecting the diaspora.",
@@ -45,44 +55,44 @@ const projects = [
     width: 600,
     height: 400,
   },
-
   {
-    id: 5,
+    id: 6,
     title: "La Fontaine",
-    description: "Discover new recipes",
+    description: "Discover new recipes.",
     link: "https://la-fontaine.vercel.app/",
     image: "/images/projects/5.png", // Change to the correct image path
     width: 600,
     height: 400,
   },
   {
-    id: 6,
+    id: 7,
     title: "Kyoto",
-    description: "Guide to Japan",
+    description: "Guide to Japan.",
     link: "https://mohamed-ali-youssouf.github.io/site-kyoto/#home",
     image: "/images/projects/6.png", // Change to the correct image path
     width: 600,
     height: 400,
   },
   {
-    id: 7,
+    id: 8,
     title: "Calculator",
-    description: "Design of Calculator",
+    description: "Design of Calculator.",
     link: "https://mohamed-ali-youssouf.github.io/Calculator/",
     image: "/images/projects/7.png", // Change to the correct image path
     width: 600,
     height: 400,
   },
   {
-    id: 8,
+    id: 9,
     title: "TODO",
-    description: "TODO app",
+    description: "TODO app.",
     link: "https://github.com/MOHAMED-ALI-YOUSSOUF/Todo.app",
     image: "/images/projects/8.png", // Change to the correct image path
     width: 800,
     height: 500,
   },
 ];
+
 
 const FramerImage = motion(Image);
 const FeaturedProject = ({
