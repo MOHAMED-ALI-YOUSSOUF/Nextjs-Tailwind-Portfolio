@@ -7,6 +7,16 @@ import { motion } from "framer-motion";
 const projects = [
   {
     id: 1,
+    title: "PrimoAfrikanet",
+    description:
+      "A business consulting platform connecting African entrepreneurs with opportunities in Turkey. The platform showcases consulting services, events, and partnerships.",
+    link: "https://primoafrikanet.com", // Remplace par le lien correct si nécessaire
+    image: "/images/projects/primoafrikanet.png", // Assure-toi d'avoir une image correcte dans ce chemin
+    width: 600,
+    height: 400,
+  },
+  {
+    id: 2,
     title: "Personal Budget Tracker",
     description:
       "A web application designed to help users track their income, expenses, and overall financial health, featuring charts, reports, and spending insights.",
@@ -16,7 +26,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 2,
+    id: 3,
     title: "Saleh Ismael Portfolio",
     description:
       "A personal portfolio website showcasing the work of Saleh Ismael, featuring interactive elements and a modern design.",
@@ -26,7 +36,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 3,
+    id: 4,
     title: "Djibstudy",
     description:
       "An educational platform for Djibouti students, providing resources for students.",
@@ -36,7 +46,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 4,
+    id: 5,
     title: "IT Mastery",
     description:
       "Educational platform created using React.js & Bootstrap with a team.",
@@ -46,7 +56,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 5,
+    id: 6,
     title: "Afar Halk Derneği",
     description:
       "A website for the Afar Cultural Association, aimed at promoting Afar culture and connecting the diaspora.",
@@ -56,7 +66,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 6,
+    id: 7,
     title: "La Fontaine",
     description: "Discover new recipes.",
     link: "https://la-fontaine.vercel.app/",
@@ -65,7 +75,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 7,
+    id: 8,
     title: "Kyoto",
     description: "Guide to Japan.",
     link: "https://mohamed-ali-youssouf.github.io/site-kyoto/#home",
@@ -74,7 +84,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 8,
+    id: 9,
     title: "Calculator",
     description: "Design of Calculator.",
     link: "https://mohamed-ali-youssouf.github.io/Calculator/",
@@ -83,7 +93,7 @@ const projects = [
     height: 400,
   },
   {
-    id: 9,
+    id: 10,
     title: "TODO",
     description: "TODO app.",
     link: "https://github.com/MOHAMED-ALI-YOUSSOUF/Todo.app",
@@ -92,6 +102,7 @@ const projects = [
     height: 500,
   },
 ];
+
 
 
 const FramerImage = motion(Image);
@@ -207,7 +218,7 @@ const Project = ({ type, title, summary, img, link, width, height }) => {
 const ProjectCard = () => {
   return (
     <>
-    <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+    {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
       <div  className="col-span-12 ">
 
         
@@ -240,10 +251,16 @@ const ProjectCard = () => {
        
     }
       </div>
-    </div>
-     {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0"> 
-        // Featured Project 
-        <div className="col-span-12">
+    </div> */}
+     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0"> 
+      
+        <motion.div 
+             
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1.5, delay: 1* 0.1 }}
+              viewport={{ once: true }}
+              className="col-span-12">
           <FeaturedProject
             title={projects[0].title}
             summary={projects[0].description}
@@ -254,11 +271,17 @@ const ProjectCard = () => {
             width={projects[0].width}
             height={projects[0].height}
           />
-        </div>
+        </motion.div>
 
-        // Other Projects 
+    
         {projects.slice(1, 3).map((project, index) => (
-          <div className="col-span-6 sm:col-span-12" key={index}>
+          <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5, delay: index * 0.1 }}
+          viewport={{ once: true }}
+          className="col-span-6 sm:col-span-12">
             <Project
               title={project.title}
               summary={project.description}
@@ -269,9 +292,15 @@ const ProjectCard = () => {
               width={project.width}
               height={project.height}
             />
-          </div>
+          </motion.div>
         ))}
-        <div className="col-span-12">
+        <motion.div 
+           
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 1 * 0.1 }}
+            viewport={{ once: true }}
+            className="col-span-12">
           <FeaturedProject
             title={projects[3].title}
             summary={projects[3].description}
@@ -282,9 +311,15 @@ const ProjectCard = () => {
             width={projects[3].width}
             height={projects[3].height}
           />
-        </div>
+        </motion.div>
         {projects.slice(4).map((project, index) => (
-          <div className="col-span-6 sm:col-span-12" key={index}>
+          <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: index * 0.1 }}
+          viewport={{ once: true }}
+           className="col-span-6 sm:col-span-12">
             <Project
               title={project.title}
               summary={project.description}
@@ -295,9 +330,9 @@ const ProjectCard = () => {
               width={project.width}
               height={project.height}
             />
-          </div>
+          </motion.div>
         ))}
-      </div>  */}
+      </div>  
      
   
     </>
